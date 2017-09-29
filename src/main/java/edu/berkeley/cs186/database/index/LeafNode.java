@@ -148,6 +148,7 @@ class LeafNode extends BPlusNode {
     // See BPlusNode.put.
     @Override
     public Optional<Pair<DataBox, Integer>> put(DataBox key, RecordId rid) throws BPlusTreeException {
+//        NoOverflow
         int i;
         for (i = 0; i < keys.size(); ++i) {
             DataBox cur = keys.get(i);
@@ -159,8 +160,24 @@ class LeafNode extends BPlusNode {
         }
         keys.add(i, key);
         rids.add(i, rid);
-        sync();
-        return Optional.empty();
+        if (keys.size() > metadata.getOrder() * 2) {
+            List<DataBox> new_keys = new ArrayList<>();
+            List<RecordId> new_rids = new ArrayList<>();
+            int mid = keys.size() / 2;
+            while (mid < keys.size()) {
+                new_keys.add(keys.remove(mid));
+                new_rids.add(rids.remove(mid));
+            }
+//            Create new Node
+            LeafNode new_node = new LeafNode(metadata, new_keys, new_rids, this.rightSibling);
+//            link nodes
+            this.rightSibling = Optional.of(new_node.getPage().getPageNum());
+            sync();
+            return Optional.of(new Pair<DataBox, Integer>(new_keys.get(0), new_node.getPage().getPageNum()));
+        } else {
+            sync();
+            return Optional.empty();
+        }
     }
 
     // See BPlusNode.remove.

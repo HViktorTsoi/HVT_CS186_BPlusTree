@@ -105,9 +105,38 @@ class InnerNode extends BPlusNode {
     public Optional<Pair<DataBox, Integer>> put(DataBox key, RecordId rid) throws BPlusTreeException {
         int i = searchByKey(key);
         BPlusNode bpNode = BPlusNode.fromBytes(metadata, children.get(i));
-        bpNode.put(key, rid);
-        sync();
-        return Optional.empty();
+        Optional<Pair<DataBox, Integer>> rst = bpNode.put(key, rid);
+        //如果叶子节点有分裂
+        if (!rst.equals(Optional.empty())) {
+            DataBox new_key = rst.get().getFirst();
+            Integer new_children = rst.get().getSecond();
+            int insert_position = searchByKey(new_key);
+            keys.add(insert_position, new_key);
+            children.add(insert_position + 1, new_children);
+            //如果在更新innerNode的过程中发生了overflow
+            if (keys.size() > metadata.getOrder() * 2) {
+                List<DataBox> new_keys = new ArrayList<>();
+                List<Integer> new_childrens = new ArrayList<>();
+                int mid = keys.size() / 2;
+                int start = mid + 1;
+                while (start < keys.size()) {
+                    new_keys.add(keys.remove(start));
+                    new_childrens.add(children.remove(start));
+                }
+                new_childrens.add(children.remove(start));
+                InnerNode innerNode = new InnerNode(metadata, new_keys, new_childrens);
+                DataBox split_key = keys.remove(mid);
+                sync();
+                //返回的是新分裂出来的Node
+                return Optional.of(new Pair<DataBox, Integer>(split_key, innerNode.getPage().getPageNum()));
+            } else {
+                sync();
+                return Optional.empty();
+            }
+        } else {
+            sync();
+            return Optional.empty();
+        }
     }
 
     // See BPlusNode.remove.
