@@ -1,16 +1,15 @@
 package edu.berkeley.cs186.database.index;
 
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 
 import edu.berkeley.cs186.database.common.Pair;
 import edu.berkeley.cs186.database.databox.DataBox;
 import edu.berkeley.cs186.database.databox.Type;
 import edu.berkeley.cs186.database.io.Page;
 import edu.berkeley.cs186.database.table.RecordId;
+
+import javax.xml.crypto.Data;
 
 /**
  * A inner node of a B+ tree. Every inner node in a B+ tree of order d stores
@@ -70,8 +69,19 @@ class InnerNode extends BPlusNode {
     // See BPlusNode.get.
     @Override
     public LeafNode get(DataBox key) {
-        
-        throw new UnsupportedOperationException("TODO(hw2): implement.");
+        int i;
+        for (i = 0; i < keys.size(); ++i) {
+            DataBox cur = keys.get(i);
+            if (key.getInt() < cur.getInt()) {
+                break;
+            }
+        }
+        BPlusNode bpNode = BPlusNode.fromBytes(metadata, children.get(i));
+        if (bpNode.getClass() == edu.berkeley.cs186.database.index.InnerNode.class) {
+            return bpNode.get(key);
+        } else {
+            return LeafNode.fromBytes(metadata, children.get(i));
+        }
     }
 
     // See BPlusNode.getLeftmostLeaf.
