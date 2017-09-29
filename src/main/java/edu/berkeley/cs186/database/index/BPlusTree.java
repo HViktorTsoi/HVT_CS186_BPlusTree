@@ -143,7 +143,16 @@ public class BPlusTree {
      */
     public Optional<RecordId> get(DataBox key) {
         typecheck(key);
-        throw new UnsupportedOperationException("TODO(hw2): implement.");
+        LeafNode leafNode = root.get(key);
+        List<DataBox> keys = leafNode.getKeys();
+        for (int i = 0; i < keys.size(); ++i) {
+            DataBox cur = keys.get(i);
+            if (cur.equals(key)) {
+                return Optional.of(leafNode.getRids().get(i));
+            }
+        }
+        //Not Found
+        return Optional.empty();
     }
 
     /**

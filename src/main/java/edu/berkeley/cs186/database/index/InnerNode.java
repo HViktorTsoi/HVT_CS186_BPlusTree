@@ -65,15 +65,28 @@ class InnerNode extends BPlusNode {
         sync();
     }
 
+//    private int searchByKey(DataBox key) {
+//        int i;
+//        for (i = 0; i < keys.size(); ++i) {
+//            DataBox cur = keys.get(i);
+//            if (key.getInt() < cur.getInt()) {
+//                break;
+//            }
+//        }
+//        return i;
+//    }
+
     private int searchByKey(DataBox key) {
-        int i;
-        for (i = 0; i < keys.size(); ++i) {
-            DataBox cur = keys.get(i);
-            if (key.getInt() < cur.getInt()) {
-                break;
-            }
+//        int i;
+        int l = 0, r = keys.size();
+        while (l < r) {
+            int m = l + (r - l) / 2;
+            if (keys.get(m).getInt() <= key.getInt())
+                l = m + 1;
+            else if (keys.get(m).getInt() > key.getInt())
+                r = m;
         }
-        return i;
+        return l;
     }
 
     // Core API //////////////////////////////////////////////////////////////////
