@@ -77,17 +77,22 @@ class InnerNode extends BPlusNode {
             }
         }
         BPlusNode bpNode = BPlusNode.fromBytes(metadata, children.get(i));
-        if (bpNode.getClass() == edu.berkeley.cs186.database.index.InnerNode.class) {
+        if (bpNode.getClass() == InnerNode.class) {
             return bpNode.get(key);
         } else {
-            return LeafNode.fromBytes(metadata, children.get(i));
+            return (LeafNode) bpNode;
         }
     }
 
     // See BPlusNode.getLeftmostLeaf.
     @Override
     public LeafNode getLeftmostLeaf() {
-        throw new UnsupportedOperationException("TODO(hw2): implement.");
+        BPlusNode bpNode = BPlusNode.fromBytes(metadata, children.get(0));
+        if (bpNode.getClass() == InnerNode.class) {
+            return bpNode.getLeftmostLeaf();
+        } else {
+            return (LeafNode) bpNode;
+        }
     }
 
     // See BPlusNode.put.

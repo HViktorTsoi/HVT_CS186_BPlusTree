@@ -140,7 +140,7 @@ class LeafNode extends BPlusNode {
     // See BPlusNode.getLeftmostLeaf.
     @Override
     public LeafNode getLeftmostLeaf() {
-        throw new UnsupportedOperationException("TODO(hw2): implement.");
+        return this;
     }
 
     // See BPlusNode.put.
