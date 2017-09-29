@@ -13,6 +13,8 @@ import edu.berkeley.cs186.database.databox.Type;
 import edu.berkeley.cs186.database.io.Page;
 import edu.berkeley.cs186.database.table.RecordId;
 
+import javax.xml.crypto.Data;
+
 /**
  * A leaf of a B+ tree. Every leaf in a B+ tree of order d stores between d and
  * 2d (key, record id) pairs and a pointer to its right sibling (i.e. the page
@@ -145,9 +147,20 @@ class LeafNode extends BPlusNode {
 
     // See BPlusNode.put.
     @Override
-    public Optional<Pair<DataBox, Integer>> put(DataBox key, RecordId rid)
-            throws BPlusTreeException {
-        throw new UnsupportedOperationException("TODO(hw2): implement.");
+    public Optional<Pair<DataBox, Integer>> put(DataBox key, RecordId rid) throws BPlusTreeException {
+        int i;
+        for (i = 0; i < keys.size(); ++i) {
+            DataBox cur = keys.get(i);
+            if (key.getInt() == cur.getInt()) {
+                throw new BPlusTreeException("Duplicate entries!");
+            } else if (key.getInt() < cur.getInt()) {
+                break;
+            }
+        }
+        keys.add(i, key);
+        rids.add(i, rid);
+        sync();
+        return Optional.empty();
     }
 
     // See BPlusNode.remove.
