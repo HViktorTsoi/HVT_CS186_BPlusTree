@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e6486a5-da28-4b55-9e9a-df130ac625bb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/InnerNode.java" afterPath="$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/InnerNode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/LeafNode.java" afterPath="$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/LeafNode.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,20 +16,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.73920864">
+    <splitter split-orientation="horizontal" split-proportion="0.51048315">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="LeafNode.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/LeafNode.java">
+          <file leaf-file-name="TestInnerNode.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestInnerNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="125">
-                  <caret line="186" column="23" lean-forward="false" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#5890#5891#0" expanded="true" />
-                    <element signature="e#5917#5918#0" expanded="true" />
-                    <element signature="e#7146#7147#0" expanded="true" />
-                    <element signature="e#7184#7185#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="306">
+                  <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -36,29 +32,22 @@
           <file leaf-file-name="InnerNode.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/InnerNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="323" column="28" lean-forward="false" selection-start-line="323" selection-start-column="28" selection-end-line="323" selection-end-column="28" />
+                <state relative-caret-position="191">
+                  <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TestLeafNode.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestLeafNode.java">
+          <file leaf-file-name="LeafNode.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/LeafNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="178">
-                  <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
-            <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="127">
+                  <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#7345#7346#0" expanded="true" />
+                    <element signature="e#7383#7384#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -70,20 +59,8 @@
           <file leaf-file-name="BPlusNode.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/BPlusNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="131" column="50" lean-forward="false" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="50" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BPlusTree.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/BPlusTree.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="10" />
+                <state relative-caret-position="118">
+                  <caret line="187" column="23" lean-forward="false" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -112,10 +89,11 @@
       <find>test</find>
       <find>test.*?put</find>
       <find>maxorder</find>
-      <find>get</find>
       <find>duplicate</find>
       <find>testget</find>
+      <find>get</find>
       <find>put</find>
+      <find>remove</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,9 +108,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/InnerNode.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestLeafNode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestInnerNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/LeafNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/InnerNode.java" />
       </list>
     </option>
   </component>
@@ -267,8 +246,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestLeafNode.testNoOverflowPutsFromDisk">
-    <configuration name="TestLeafNode.testMaxOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestInnerNode">
+    <configuration name="TestInnerNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.berkeley.cs186.database.index.*" />
@@ -279,8 +258,33 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.berkeley.cs186.database.index" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.cs186.database.index.TestLeafNode" />
-      <option name="METHOD_NAME" value="testMaxOrder" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.cs186.database.index.TestInnerNode" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestInnerNode.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.berkeley.cs186.database.index.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hw2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.berkeley.cs186.database.index" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.cs186.database.index.TestInnerNode" />
+      <option name="METHOD_NAME" value="testGet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -293,7 +297,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestLeafNode.testNoOverflowPutsFromDisk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestInnerNode.testRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.berkeley.cs186.database.index.*" />
@@ -304,8 +308,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.berkeley.cs186.database.index" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.cs186.database.index.TestLeafNode" />
-      <option name="METHOD_NAME" value="testNoOverflowPutsFromDisk" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.cs186.database.index.TestInnerNode" />
+      <option name="METHOD_NAME" value="testRemove" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -318,7 +322,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestLeafNode.testScanAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLeafNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.berkeley.cs186.database.index.*" />
@@ -330,8 +334,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.berkeley.cs186.database.index" />
       <option name="MAIN_CLASS_NAME" value="edu.berkeley.cs186.database.index.TestLeafNode" />
-      <option name="METHOD_NAME" value="testScanAll" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -343,7 +347,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestLeafNode.testToAndFromBytes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLeafNode.testSimpleRemoves" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.berkeley.cs186.database.index.*" />
@@ -355,32 +359,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.berkeley.cs186.database.index" />
       <option name="MAIN_CLASS_NAME" value="edu.berkeley.cs186.database.index.TestLeafNode" />
-      <option name="METHOD_NAME" value="testToAndFromBytes" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestLeafNode.testToSexp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.berkeley.cs186.database.index.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="hw2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="edu.berkeley.cs186.database.index" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.cs186.database.index.TestLeafNode" />
-      <option name="METHOD_NAME" value="testToSexp" />
+      <option name="METHOD_NAME" value="testSimpleRemoves" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -475,19 +454,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testToSexp" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testToAndFromBytes" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testScanAll" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testMaxOrder" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testNoOverflowPutsFromDisk" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testSimpleRemoves" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestLeafNode" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestInnerNode.testRemove" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestInnerNode.testGet" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestInnerNode" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testNoOverflowPutsFromDisk" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testMaxOrder" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testScanAll" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testToAndFromBytes" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testToSexp" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestInnerNode" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestInnerNode.testGet" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestInnerNode.testRemove" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestLeafNode" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestLeafNode.testSimpleRemoves" />
       </list>
     </recent_temporary>
   </component>
@@ -508,35 +487,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestLeafNode_testMaxOrder - 2017.09.29 at 23h 08m 07s.xml">
-      <configuration name="TestLeafNode.testMaxOrder" configurationId="JUnit" />
+    <history-entry file="TestInnerNode - 2017.09.29 at 23h 53m 33s.xml">
+      <configuration name="TestInnerNode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testNoOverflowPutsFromDisk - 2017.09.29 at 23h 04m 36s.xml">
-      <configuration name="TestLeafNode.testNoOverflowPutsFromDisk" configurationId="JUnit" />
+    <history-entry file="TestInnerNode_testGet - 2017.09.29 at 23h 53m 09s.xml">
+      <configuration name="TestInnerNode.testGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testNoOverflowPutsFromDisk - 2017.09.29 at 23h 11m 57s.xml">
-      <configuration name="TestLeafNode.testNoOverflowPutsFromDisk" configurationId="JUnit" />
+    <history-entry file="TestInnerNode_testGet - 2017.09.29 at 23h 53m 24s.xml">
+      <configuration name="TestInnerNode.testGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testNoOverflowPutsFromDisk - 2017.09.29 at 23h 12m 04s.xml">
-      <configuration name="TestLeafNode.testNoOverflowPutsFromDisk" configurationId="JUnit" />
+    <history-entry file="TestInnerNode_testRemove - 2017.09.29 at 23h 52m 59s.xml">
+      <configuration name="TestInnerNode.testRemove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testScanAll - 2017.09.29 at 23h 07m 52s.xml">
-      <configuration name="TestLeafNode.testScanAll" configurationId="JUnit" />
+    <history-entry file="TestLeafNode - 2017.09.29 at 23h 46m 11s.xml">
+      <configuration name="TestLeafNode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testScanGreaterEqual - 2017.09.29 at 23h 05m 01s.xml">
-      <configuration name="TestLeafNode.testScanGreaterEqual" configurationId="JUnit" />
+    <history-entry file="TestLeafNode_testSimpleRemoves - 2017.09.29 at 23h 40m 54s.xml">
+      <configuration name="TestLeafNode.testSimpleRemoves" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testToAndFromBytes - 2017.09.29 at 23h 05m 24s.xml">
-      <configuration name="TestLeafNode.testToAndFromBytes" configurationId="JUnit" />
+    <history-entry file="TestLeafNode_testSimpleRemoves - 2017.09.29 at 23h 42m 39s.xml">
+      <configuration name="TestLeafNode.testSimpleRemoves" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testToAndFromBytes - 2017.09.29 at 23h 06m 41s.xml">
-      <configuration name="TestLeafNode.testToAndFromBytes" configurationId="JUnit" />
+    <history-entry file="TestLeafNode_testSimpleRemoves - 2017.09.29 at 23h 42m 45s.xml">
+      <configuration name="TestLeafNode.testSimpleRemoves" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testToAndFromBytes - 2017.09.29 at 23h 07m 15s.xml">
-      <configuration name="TestLeafNode.testToAndFromBytes" configurationId="JUnit" />
+    <history-entry file="TestLeafNode_testSimpleRemoves - 2017.09.29 at 23h 43m 54s.xml">
+      <configuration name="TestLeafNode.testSimpleRemoves" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLeafNode_testToSexp - 2017.09.29 at 23h 05m 19s.xml">
-      <configuration name="TestLeafNode.testToSexp" configurationId="JUnit" />
+    <history-entry file="TestLeafNode_testSimpleRemoves - 2017.09.29 at 23h 46m 03s.xml">
+      <configuration name="TestLeafNode.testSimpleRemoves" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -558,12 +537,12 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15757576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1689394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47900465" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27060652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -579,7 +558,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/LeafNode.java</url>
+          <line>169</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -613,10 +600,8 @@
         <state relative-caret-position="5454">
           <caret line="330" column="41" lean-forward="false" selection-start-line="330" selection-start-column="41" selection-end-line="330" selection-end-column="41" />
           <folding>
-            <element signature="e#5890#5891#0" expanded="true" />
-            <element signature="e#5917#5918#0" expanded="true" />
-            <element signature="e#7146#7147#0" expanded="true" />
-            <element signature="e#7184#7185#0" expanded="true" />
+            <element signature="e#7345#7346#0" expanded="true" />
+            <element signature="e#7383#7384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -662,10 +647,8 @@
         <state relative-caret-position="5454">
           <caret line="330" column="41" lean-forward="false" selection-start-line="330" selection-start-column="41" selection-end-line="330" selection-end-column="41" />
           <folding>
-            <element signature="e#5890#5891#0" expanded="true" />
-            <element signature="e#5917#5918#0" expanded="true" />
-            <element signature="e#7146#7147#0" expanded="true" />
-            <element signature="e#7184#7185#0" expanded="true" />
+            <element signature="e#7345#7346#0" expanded="true" />
+            <element signature="e#7383#7384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,13 +666,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestBPlusNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -712,17 +688,6 @@
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/BPlusTreeMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding>
-            <element signature="e#1151#1152#0" expanded="false" />
-            <element signature="e#1177#1178#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -814,6 +779,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/local/jdk1.8.0_144/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="151" column="16" lean-forward="false" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/BPlusTreeMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestBPlusNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/BPlusTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -824,65 +821,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/BPlusNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="131" column="50" lean-forward="false" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestInnerNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="207" column="36" lean-forward="false" selection-start-line="207" selection-start-column="36" selection-end-line="207" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/InnerNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="323" column="28" lean-forward="false" selection-start-line="323" selection-start-column="28" selection-end-line="323" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/jdk1.8.0_144/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="151" column="16" lean-forward="false" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/LeafNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="186" column="23" lean-forward="false" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
+        <state relative-caret-position="127">
+          <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
           <folding>
-            <element signature="e#5890#5891#0" expanded="true" />
-            <element signature="e#5917#5918#0" expanded="true" />
-            <element signature="e#7146#7147#0" expanded="true" />
-            <element signature="e#7184#7185#0" expanded="true" />
+            <element signature="e#7345#7346#0" expanded="true" />
+            <element signature="e#7383#7384#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestLeafNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        <state relative-caret-position="2304">
+          <caret line="153" column="20" lean-forward="false" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/BPlusNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="187" column="23" lean-forward="false" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/berkeley/cs186/database/index/InnerNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/berkeley/cs186/database/index/TestInnerNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>

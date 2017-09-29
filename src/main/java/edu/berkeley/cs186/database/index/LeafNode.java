@@ -166,7 +166,16 @@ class LeafNode extends BPlusNode {
     // See BPlusNode.remove.
     @Override
     public void remove(DataBox key) {
-        throw new UnsupportedOperationException("TODO(hw2): implement.");
+        int i;
+        for (i = 0; i < keys.size(); ++i) {
+            DataBox cur = keys.get(i);
+            if (key.getInt() == cur.getInt()) {
+                keys.remove(i);
+                rids.remove(i);
+                break;
+            }
+        }
+        sync();
     }
 
     // Iterators /////////////////////////////////////////////////////////////////

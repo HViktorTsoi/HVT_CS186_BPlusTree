@@ -65,10 +65,7 @@ class InnerNode extends BPlusNode {
         sync();
     }
 
-    // Core API //////////////////////////////////////////////////////////////////
-    // See BPlusNode.get.
-    @Override
-    public LeafNode get(DataBox key) {
+    private int searchByKey(DataBox key) {
         int i;
         for (i = 0; i < keys.size(); ++i) {
             DataBox cur = keys.get(i);
@@ -76,6 +73,14 @@ class InnerNode extends BPlusNode {
                 break;
             }
         }
+        return i;
+    }
+
+    // Core API //////////////////////////////////////////////////////////////////
+    // See BPlusNode.get.
+    @Override
+    public LeafNode get(DataBox key) {
+        int i = searchByKey(key);
         BPlusNode bpNode = BPlusNode.fromBytes(metadata, children.get(i));
         if (bpNode.getClass() == InnerNode.class) {
             return bpNode.get(key);
@@ -97,15 +102,20 @@ class InnerNode extends BPlusNode {
 
     // See BPlusNode.put.
     @Override
-    public Optional<Pair<DataBox, Integer>> put(DataBox key, RecordId rid)
-            throws BPlusTreeException {
-        throw new UnsupportedOperationException("TODO(hw2): implement.");
+    public Optional<Pair<DataBox, Integer>> put(DataBox key, RecordId rid) throws BPlusTreeException {
+        int i = searchByKey(key);
+        BPlusNode bpNode = BPlusNode.fromBytes(metadata, children.get(i));
+        bpNode.put(key, rid);
+        sync();
+        return Optional.empty();
     }
 
     // See BPlusNode.remove.
     @Override
     public void remove(DataBox key) {
-        throw new UnsupportedOperationException("TODO(hw2): implement.");
+        int i = searchByKey(key);
+        BPlusNode bpNode = BPlusNode.fromBytes(metadata, children.get(i));
+        bpNode.remove(key);
     }
 
     // Helpers ///////////////////////////////////////////////////////////////////
